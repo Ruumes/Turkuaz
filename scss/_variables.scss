@@ -1,0 +1,28 @@
+$primaryColor: #30d5c8 !default;
+$secondaryColor: #00e676;
+$thirtyColor: #cc73af;
+$purple: #6d2b6f;
+$lightPink: #f7d4db;
+$darkPink: #d32a47;
+$white: #FFF;
+$light-grey: #dee1e3;
+$grey: #5d6163;
+$dark-grey: #333539;
+
+$primary: $primaryColor;
+$theme-colors: (
+  "turkuaz": $primaryColor,
+  "yesil": $secondaryColor,
+  "pembe": $thirtyColor,
+  "mor": $purple,
+  "acik-pembe": $lightPink,
+  "koyu-pembe": $darkPink,
+  "beyaz": $white,
+  "acik-gri": $light-grey,
+  "gri": $grey,
+  "koyu-gri": $dark-grey
+);
+
+//ACORDION COLOR
+$accordion-icon-color:                    $primaryColor;
+$accordion-icon-active-color:             $primaryColor;

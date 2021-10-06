@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Profili</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-turkuaz">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5 text-white" href="index.html">TurkuazGece</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="exnavbar">
+                <ul class="navbar-nav d-flex m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="yardim.html">YARDIM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="modelBasvuru.html">MODEL BAŞVURU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="bonuslar.html">BONUSLAR</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown mx-5">
+                    <a class="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hesabım
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Online Modeller</a></li>
+                        <li><a class="dropdown-item" href="#">Profilim</a></li>
+                        <li><a class="dropdown-item" href="#">Model Davet</a></li>
+                        <li><a class="dropdown-item" href="#">Mesajlar</a></li>
+                        <li><a class="dropdown-item" href="#">Favorilerim</a></li>
+                        <li><a class="dropdown-item" href="#">Harcama Geçmişi</a></li>
+                        <li><a class="dropdown-item" href="#">Satın Alma Geçmişi</a></li>
+                        <li><a class="dropdown-item" href="#">Çıkış Yap</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-white d-none d-sm-block kapsayici">
+        <div class="row">
+            <div class="col mx-5">
+                <p>Hemen Gold Üye Ol! Sınırsız Sohbet Et</p>
+            </div>
+            <div class="col">
+                <button class="btn btn-turkuaz text-white fw-bold">Gold Üye Ol</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-dark text-white">Çıkış Yap <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid genel-container">
+        <div class="container w-75 bonus-container">
+            <div class="container w-50">
+                <div class="page-title py-3">
+                    <h3 class="fw-bold text-capitalize text-center">Kullanıcı Profili</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="kp-img">
+                        <img src="/img/default.jpg" alt="">
+                    </div>
+                    <div class="username">
+                        <span>Kullanıcı adı</span>
+                    </div>
+                    <form>
+                        <div class="form-group mt-5">
+                            <div class="form-group">
+                                <label class="sr-only fw-bold" for="inlineFormInputGroup">Kullanıcı Adı</label>
+                                <div class="input-group mb-2">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                  </div>
+                                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Kullanıcı adı">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1" class="col-sm-6 col-form-label fw-bold">Açıklama</label>
+                                    <textarea class="form-control input-border" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer py-5 footer-bar">
+        <div class="container-fluid text-white">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <ul>
+                        <li>
+                            <a href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li>
+                            <a href="yardim.html">Yardım</a>
+                        </li>
+                        <li>
+                            <a href="bizeUlasin.html">Bize Ulaşın</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>
+                            <a href="destek.html">Destek</a>
+                        </li>
+                        <li>
+                            <a href="gizlilikPolitikasi.html">Gizlilik Politikası</a>
+                        </li>
+                        <li>
+                            <a href="kullanimSozlesmesi.html">Kullanım Sözleşmesi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>
+                            <a href="sureSatinAl.html">Süre Satın Al</a>
+                        </li>
+                        <li>
+                            <a href="bonuslar.html">Bonuslar</a>
+                        </li>
+                        <li>
+                            <a href="modelBasvuru.html">Model Başvurusu</a>
+                        </li>                       
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-border"></div>
+            <div class="footer-yazi mt-3 pl-2 pr-2">
+                <p>turkuazgece Görüntülü sohbet sitelerinden biri olan turkuazgece.com ve ilgili tüm alt alan adlarında
+                    faaliyet gösteren sitemiz, 5651 sayılı yasa uyarınca "YER SAĞLAYICI" olarak faaliyet yürüttüğünden, TÜM
+                    ÜYELERİMİZ sitemizde "İÇERİK SAĞLAYICI" sıfatıyla faaliyet yürütmektedirler. Bu nedenle 5651 sayılı yasa
+                    ve Türk Ceza Yasası kapsamında yaptıkları tüm eylemlerden üyelerimiz kendileri sorumludur. Canlı sohbet
+                    sitelerinden biri olan turkuazgece.com; üyelerinin sağladığı hiçbir içerikten, yazışmalarından,
+                    sesli/videolu/görüntülü görüşmelerinden ve eylemlerinden sorumlu tutulamaz.
+                </p>
+                    <div class="text-center">
+                      <span>
+                        2021 turkuazgece.com Tüm Hakları Saklıdır.
+                      </span> 
+                    </div>
+            </div>           
+        </div>
+    </footer>
+</body>
+</html>

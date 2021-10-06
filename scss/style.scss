@@ -1,0 +1,290 @@
+@use 'custom';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/*LOGİN*/
+.custom-full-height{
+    height: 100vh;
+    overflow: none;
+    h3{
+        color: #FFF;     
+    }
+    h6{
+        color: #FFF;
+        font-size: 2.5rem;
+    }
+    p {
+        color: #FFF;
+    }
+}
+.login-bg {
+    background-image: url('https://i.hizliresim.com/Op6AbE.png');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(48, 213, 200, .45);
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+}
+.login-title {
+    h3{
+        color: #FFF;
+        z-index: 1000;
+    }
+    h6 {
+        color: #FFF;
+        z-index: 1000;
+    }
+    p {
+        color: #FFF;
+        z-index: 1000;
+    }
+}
+.center-title {
+    margin: auto;
+}
+.login-button {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    line-height: .0rem;
+}
+@media (max-width:768px) {
+    .login-bg {
+        display: none;
+    }
+}
+/*NAVİGATİON2*/ 
+.kapsayici {
+    height: 8vh;
+    line-height: 8vh;
+    background-color: #000;
+}
+
+/*HEADER-3*/ 
+.header-3 {
+    height: 15vh;
+    background-color: lighten($color: #f9a41c, $amount: .9);
+    .bakiye-img {
+        background: url("https://www.skytalkme.com/users/images/campaign-timer.png") no-repeat center;
+        background-size: 412px 66px;
+        position: relative;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 43%;
+            transform: translate(-50%,-50%);
+            color: #d32a47;
+        }
+    }
+    .etiketler {
+        a {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 1.5rem;
+        }       
+    }
+}
+@media (min-width: 576px) and (max-width:1200px) {
+    .bakiye-img {
+        display: none;
+    }
+    .etiketler {
+        .message {
+            display: none;
+        }
+        .sohbet {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .bakiye-button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }  
+}
+@media (min-width: 576px) and (max-width:1200px) {
+    .bakiye-img {
+        display: none;
+    }
+    .etiketler {
+        .message {
+            display: none;
+        }
+        .sohbet {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .bakiye-button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }  
+}
+/*HEADER-4*/
+.card-bonkor {
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+    }  
+    .card-hover {
+        &:hover{
+            background-color: #f7d4db;
+        }
+        img {
+            display: flex;
+            align-self: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 100%;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width:1200px) {
+    .card-bonkor {
+        height: 107px;
+        overflow: scroll;
+    }
+    
+}
+/*MODELLER*/
+
+.model-picture {
+    position: relative;
+}
+.video-icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.offline-icon {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    color: #FFF;
+    font-weight: bold;
+}
+.card-shadow {
+    box-shadow: 0px 2px 8px 2px rgba(20, 23, 28, 0.15);
+    &:hover{
+        transform: translateY(10px);
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+/*FOOTER*/
+.footer-bar {
+    background-color: #000;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: #FFF;
+            &:hover{
+                opacity: .6;
+            }
+        }
+    }
+    .footer-border {
+        border-top: 2px solid #333539;
+    }
+    .footer-yazi {
+        font-size: 0.75rem;
+        color: #9ea0a6;
+    }
+}
+/*BONUSLAR*/
+.genel-container {
+    background-color: #dee1e3;
+}
+.bonus-container {
+    height: 100vh;
+    background-color: #FFF;
+}
+
+/*BİZE ULASİN*/
+.input-border {
+    border-radius: 10px;
+}
+
+/*YARDIM*/
+.btn-online {
+    background-color: #5d6163;
+    color: #FFF;
+    &:hover{
+        background-color: #30d5c8;
+        color: #FFF;
+    }
+}
+/*MODEL BAŞVURU*/
+.model-basvuru-img {
+    background: #FFFF url('https://www.skytalkme.com/images/performer.jpg') no-repeat 130px center;
+    background-size: cover;
+    float: right;  
+}
+@media (min-width: 576px) and (max-width:1200px) {
+    .bonus-container {
+        max-width: 100%;
+    }  
+}
+/*KULLANICI PROFİLİ*/
+.kp-img {
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; 
+    }
+}
+/*SÜRE SATIN AL*/
+.sure-satin-al-container {
+    background-color: #FFF;
+    height: 1500px;
+}
+
+.selectable {
+    text-align: center;
+}
+
+/*MODEL PROFİL*/
+.model-bg {
+    font-family: 'Open Sans', sans-serif;
+    background: url("/img/modal-bg.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    img {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        border: 1px inset #FFF;
+        border-radius: 50%;
+    }
+    .model-info {
+        position: absolute;
+        left: 40%;
+        top: 55%;
+        color: #FFF;
+    } 
+}
+.model-hakkimda {
+    border-bottom: 2px solid #5d6163;
+}
+.model-gorsel {
+    margin-right: 1rem;
+    border-radius: 20px;
+}
