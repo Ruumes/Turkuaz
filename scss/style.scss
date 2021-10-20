@@ -84,8 +84,8 @@ body {
         }
     }
     .etiketler {
-        a {
-            text-decoration: none;
+        span {
+            cursor: pointer;
             color: #FFF;
             font-size: 1.5rem;
         }       
@@ -155,11 +155,12 @@ body {
     .card-bonkor {
         height: 107px;
         overflow: scroll;
-    }
-    
+    }  
 }
 /*MODELLER*/
-
+.model-container{
+    width: 85%;
+}
 .model-picture {
     position: relative;
 }
@@ -185,6 +186,11 @@ body {
         color: #000;
     }
 }
+// @media (min-width: 992px) and (max-width:1200px) {
+//     .model-container{
+//         width: 100%;
+//     }
+// }
 
 /*FOOTER*/
 .footer-bar {
@@ -209,11 +215,23 @@ body {
 }
 /*BONUSLAR*/
 .genel-container {
+    width: 100%;
     background-color: #dee1e3;
 }
 .bonus-container {
+    width: 80%;
     height: 100vh;
     background-color: #FFF;
+}
+@media (min-width:0px) and (max-width:576px) {
+    .genel-container{
+        height: 100vh;
+        width: 100%;
+    }
+    .bonus-container{
+        height: 100vh;
+        width: 100%;
+    }
 }
 
 /*BİZE ULASİN*/
@@ -251,14 +269,27 @@ body {
 }
 /*SÜRE SATIN AL*/
 .sure-satin-al-container {
+    width: 75%;
     background-color: #FFF;
     height: 1500px;
+    .table-container {
+        width: 75%;
+    }
 }
 
 .selectable {
     text-align: center;
 }
-
+@media (min-width:0px) and (max-width: 576px) {
+    .sure-satin-al-container {
+        height: 1500px;
+        width: 100%;
+        .table-container{
+            height: 1500px;
+            width: 100%;
+        }
+    }
+}
 /*MODEL PROFİL*/
 .model-bg {
     font-family: 'Open Sans', sans-serif;

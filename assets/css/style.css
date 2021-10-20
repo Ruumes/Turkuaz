@@ -16601,8 +16601,8 @@ body {
   transform: translate(-50%, -50%);
   color: #d32a47;
 }
-.header-3 .etiketler a {
-  text-decoration: none;
+.header-3 .etiketler span {
+  cursor: pointer;
   color: #FFF;
   font-size: 1.5rem;
 }
@@ -16669,6 +16669,10 @@ body {
   }
 }
 /*MODELLER*/
+.model-container {
+  width: 85%;
+}
+
 .model-picture {
   position: relative;
 }
@@ -16722,14 +16726,27 @@ body {
 
 /*BONUSLAR*/
 .genel-container {
+  width: 100%;
   background-color: #dee1e3;
 }
 
 .bonus-container {
+  width: 80%;
   height: 100vh;
   background-color: #FFF;
 }
 
+@media (min-width: 0px) and (max-width: 576px) {
+  .genel-container {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .bonus-container {
+    height: 100vh;
+    width: 100%;
+  }
+}
 /*BİZE ULASİN*/
 .input-border {
   border-radius: 10px;
@@ -16766,14 +16783,28 @@ body {
 
 /*SÜRE SATIN AL*/
 .sure-satin-al-container {
+  width: 75%;
   background-color: #FFF;
   height: 1500px;
+}
+.sure-satin-al-container .table-container {
+  width: 75%;
 }
 
 .selectable {
   text-align: center;
 }
 
+@media (min-width: 0px) and (max-width: 576px) {
+  .sure-satin-al-container {
+    height: 1500px;
+    width: 100%;
+  }
+  .sure-satin-al-container .table-container {
+    height: 1500px;
+    width: 100%;
+  }
+}
 /*MODEL PROFİL*/
 .model-bg {
   font-family: "Open Sans", sans-serif;
